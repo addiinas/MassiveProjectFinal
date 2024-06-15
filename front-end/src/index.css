@@ -1,0 +1,32 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  padding: 20px;
+}
+
+.form-section {
+  display: none;
+}
+
+.form-section.active {
+  display: block;
+}
+
+.verification-code .input-field {
+  width: 40px;
+  text-align: center;
+}
+
+.afterform {
+  margin-top: 20px;
+  text-align: center;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  background-color: #f0f8ff;
+  font-family: 'Poppins', sans-serif;
+}

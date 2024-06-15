@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+</head>
+<body>
+    
+        <div class="container">
+            <div id="emailSection" class="form-section active">
+                <h1>Forgot Password</h1>
+                <p>Please enter your email address to receive
+                    a verification code</p>
+                <div class="input-text">
+                    <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="Enter Your Email">
+                </div>
+    
+                <button onclick="sendVerificationCode()">Send</button>
+    
+            <div class="afterform">
+                <p>Remember your password? <a href="/login.html" class="login">Back to Log In</a></p>
+            </div>
+        </div>
+        
+    
+
+        <div id="codeSection" class="form-section">
+            <header>
+                <h1>Verification Code</h1>
+            </header>
+                <p>Please enter the 4-digit verification code we sent to your phone</p>
+    
+                    <div class="verification-code">
+                        <input type="text" id="verificationCode" maxlength="1" class="input-field">
+                        <input type="text" maxlength="1" class="input-field">
+                        <input type="text" maxlength="1" class="input-field">
+                        <input type="text" maxlength="1" class="input-field">
+                    </div>
+
+                    <p>Didn't receive a code? <a href="#">Resend Code</a></p>
+                    <button onclick="verifyCode()">Verify</button>
+                    </div>
+             
+        
+
+                    <div id="resetSection" class="form-section">
+            <header>
+                <h1>Reset Password</h1>
+                <p>Please enter your new password. You will need
+                    to login after you reset</p>
+            </header>
+    
+           
+                    <label for="newPassword">New Password</label>
+                    <input type="password" id="newPassword" name="newPassword" required placeholder="Enter Your New Password">
+    
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Confirm Your New Password">
+    
+                    <button onclick="resetPassword()">Reset Password</button>
+
+                    </div>
+                </div>
+                
+     
+
+    <script src="script.js"></script>
+</body>
+</html>

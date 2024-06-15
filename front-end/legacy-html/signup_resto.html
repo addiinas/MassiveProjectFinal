@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Sign Up</title>
+    <style>
+    body {
+      background-color: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+      .carousel-item img {
+        background-color: transparent;
+        width: 80%; 
+        height: auto;
+      }
+
+      .form-box {
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+      }
+
+      .row {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+    </style>
+</head>
+<body>
+    <section class="row vh-100 justify-content-center align-items-center">
+        <div class="col-6 text-center">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="login1.png" class="d-block w-90 mx-auto" alt="..." height="400px">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="login2.png" class="d-block w-90 mx-auto" alt="..." height="400px">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="login3.png" class="d-block w-90 mx-auto" alt="..." height="400px">
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <div class="col-6">
+            <div class="form-box signup">
+              <div class="d-flex flex-row-reverse">
+                <button type="button" class="btn-close" disabled aria-label="Close"></button>
+              </div>
+                <h1>Sign Up</h1>
+                <p>Create Your Account!</p>
+                <form>
+                  <div class="row mb-3">
+                    <div class="col">
+                      <label for="name"><strong>Name</strong></label>
+                      <input type="name" id="name" name="name" class="form-control" required placeholder="Enter Your Name">
+                    </div>
+                    <div class="col">
+                      <label for="username"><strong>Username</strong></label>
+                      <input type="username" id="username" name="username" class="form-control" required placeholder="Enter Your Username">
+                    </div>
+                  </div>
+              
+                  <div class="mb-3">
+                    <label for="email"><strong>Email/ Username</strong></label>
+                    <input type="email" id="email" name="email" class="form-control" required placeholder="Enter Your Email/ Username">
+                  </div>
+              
+                  <div class="mb-3">
+                    <label for="password"><strong>Password</strong></label>
+                    <input type="password" id="password" name="password" class="form-control" required placeholder="Enter Your Password">
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+                </form>
+
+                <div class="afterform mt-3">
+                  <p>Or Log In With</p>
+                  <div class="d-flex justify-content-around pb-3">
+                    <button class="btn btn-light border border-2 flex-fill me-2"><i class='bx bxl-google'></i> Google</button>
+                  </div>
+                </div>
+
+                <p>Already have an account? <a href="/login_resto.html" class="login">Log In</a></p>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
